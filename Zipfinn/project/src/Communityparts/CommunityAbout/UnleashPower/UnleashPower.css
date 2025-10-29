@@ -1,0 +1,93 @@
+.Unleash-power {
+    background-color: black;
+}
+
+.Unleash-community-container {
+    max-width: 1400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.Unleash-community-container h1 {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    max-width: 750px;
+    padding: 2rem 0;
+}
+
+.Unleash-community-cards {
+    cursor: pointer;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 1rem;
+    width: 270px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.Unleash-community-cards:hover {
+    border: 2px solid rgb(170, 170, 170);
+    transform: scale(1.03);
+}
+
+.Unleash-card-img img {
+    padding: 0.5rem;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+}
+
+
+.Unleash-card-body {
+    text-align: left;
+}
+
+.Unleash-card-body h2 {
+    padding: 0.5rem;
+}
+
+.Unleash-card-body p {
+    font-size: 12px;
+    padding:0.5rem;
+}
+
+.Unleash-card-img video {
+padding: 0.5rem;
+    width: 250px;
+}
+
+.Unleash-card-body-images span {
+    color: blue;
+}
+
+.Unleash-community-section {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:700px) {
+    .Unleash-community-container h1 {
+        font-size: 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .Unleash-card-body-images img {
+        max-width: 300px;
+        padding-bottom: 3rem;
+    }
+}
+@media screen and (max-width:1025px) {
+    .Unleash-card-body-images img {
+        max-width:400px;
+        padding-bottom: 3rem;
+    }
+}

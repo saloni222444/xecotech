@@ -1,0 +1,142 @@
+.CompletedContests-container{
+    max-width: 1200px;
+    margin: auto;
+}
+.completed-heading h1 {
+    font-size: 5rem;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.completed-heading p {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.completed-section {
+    display: flex;
+    text-align: center;
+}
+
+.completed-card {
+    max-width: 300px;
+    height: 300px;
+    margin: 2rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.completed-card:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.158) 0px 8px 0px ;
+}
+
+.completed-card h4 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 15px;
+}
+
+.completed-card span {
+    color: rgb(22, 181, 255);
+}
+
+.completed-imgdp {
+    width: 150px;
+    justify-content: center;
+    margin: auto;
+}
+
+.dp-img img {
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.completed-imgdp p {
+    position: relative;
+    margin-top: -22px;
+    padding: 0.3rem;
+    color: #000;
+    background-color: rgb(233, 214, 214);
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+.card-uperbody {
+    padding: 0 0.5rem;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(78, 78, 134, 0.521);
+}
+
+.trade-profits {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.2rem;
+}
+
+.trade-profits h4 {
+    color: white;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-down-body .cardbtnss {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: white;
+    background-color:rgb(46, 46, 94);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-down-body .cardbtnss:hover {
+    color: #000;
+    background: rgb(226, 226, 226);
+}
+@media screen and (max-width:1025px) {
+.completed-card{
+    max-width: 400px;
+    height: 300px;
+    margin: 2rem;
+   
+}
+.CompletedContests-container{
+    max-width: 880px;
+    margin: auto;
+}
+}
+@media screen and (max-width:700px) {
+
+   .completed-heading h1 {
+    font-size: 3rem;
+}
+.completed-card{
+    max-width: 300px;
+    height: 300px;
+   
+}
+.CompletedContests-container{
+    max-width: 360px;
+    margin: auto;
+}
+}

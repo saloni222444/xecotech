@@ -1,0 +1,160 @@
+/* Container */
+.crypto-card {
+  background: #1a1d24;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: "Inter", sans-serif;
+}
+
+/* Columns wrapper */
+.crypto-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Section */
+.crypto-section {
+  flex: 1;
+  background: #232832;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.crypto-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+/* List */
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.crypto-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2b2f3a;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.crypto-item:hover {
+  background: #363c49;
+}
+
+/* Left */
+.crypto-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crypto-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.crypto-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.crypto-ticker {
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* Right */
+.crypto-right {
+  text-align: right;
+}
+
+.crypto-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.currency {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.crypto-change.up {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.crypto-change.down {
+  color: #f44336;
+  font-weight: 600;
+}
+
+/* Footer */
+.crypto-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.crypto-footer a {
+  font-size: 13px;
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.crypto-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablet & Mobile */
+@media screen and (max-width: 992px) {
+  .crypto-columns {
+    flex-direction: column;
+  }
+
+  .crypto-section {
+    width: 100%;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .crypto-card {
+    padding: 15px;
+  }
+
+  .crypto-section h3 {
+    font-size: 16px;
+  }
+
+  .crypto-item {
+    padding: 8px 10px;
+  }
+
+  .crypto-name {
+    font-size: 13px;
+  }
+
+  .crypto-ticker {
+    font-size: 11px;
+  }
+
+  .crypto-value {
+    font-size: 13px;
+  }
+}

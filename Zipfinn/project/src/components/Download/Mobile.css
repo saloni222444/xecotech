@@ -1,0 +1,137 @@
+/* Mobile.css */
+.mobile-download-page {
+  padding: 2rem;
+  min-height: 80vh;
+  background: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+.download-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.download-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+
+}
+
+.download-card {
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.app-info h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.app-features, .requirements {
+  margin: 1.5rem 0;
+}
+
+.app-features h3, .requirements h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.app-features ul, .requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app-features li, .requirements li {
+  padding: 0.3rem 0;
+  color: var(--text-secondary);
+}
+
+.download-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.store-btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.store-btn.ios {
+  background: #000;
+  color: white;
+}
+
+.store-btn.android {
+  background: #4285F4;
+  color: white;
+}
+
+.store-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.store-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.store-text span:first-child {
+  font-size: 0.8rem;
+}
+
+.store-text span:last-child {
+  font-size: 1.2rem;
+}
+
+.back-btn {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.back-btn:hover {
+  background: var(--hover-bg);
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.qr-placeholder {
+  background: var(--hover-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}

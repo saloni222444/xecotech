@@ -1,0 +1,81 @@
+.community-followus-container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.community-followus-heading {
+    padding-top: 5rem;
+    font-size: 4rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.community-followus-heading span {
+    color: rgb(17, 0, 255);
+}
+
+.community-followus-para {
+    padding-top: 2rem;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+}
+
+.follow-Zepfinn-btns {
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    font-size: 15px;
+    border-radius: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+}
+
+.follow-Zepfinn-btns:hover {
+    background-color: white;
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.community-followus-Zepfinn-btns {
+    padding-top: 2rem;
+}
+
+
+.community-followus-image {
+    align-items: center;
+    justify-content: center;
+}
+
+.community-followus-image img {
+    max-width: 1200px;
+    height: 400px;
+    padding-top: 3rem;
+    filter: blur(3px);
+    transition: filter 0.7s ease;
+}
+
+
+.community-followus-image img:hover {
+    filter: blur(0);
+}
+
+@media screen and (max-width:700px) {
+    .community-sweet-profit-para {
+        margin: 0 1rem;
+    }
+    .community-followus-image img {
+    max-width: 400px;
+    height: 200px;
+    padding-top: 3rem;
+    
+}
+}

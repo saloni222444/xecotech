@@ -1,0 +1,1028 @@
+.AO-stocks-section {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: white;
+    color: #333333;
+    padding: 20px 0;
+}
+
+.AO-section-container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Header Styles */
+.AO-section-header {
+    margin-bottom: 24px;
+}
+
+.AO-header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.AO-logo-text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.AO-flag-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    object-fit: contain;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.AO-section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.AO-title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Widget Groups */
+.AO-widget-group {
+    margin-bottom: 32px;
+}
+
+.AO-widget-header {
+    margin-bottom: 16px;
+}
+
+.AO-widget-title {
+    font-size: 1.65rem;
+    font-weight: 600;
+    margin: 0;
+    color: #000000;
+}
+
+/* Horizontal Scroll Containers */
+.AO-horizontal-scroll-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.AO-scroll-content {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 12px 0;
+    scroll-behavior: smooth;
+}
+
+.AO-scroll-content::-webkit-scrollbar {
+    display: none;
+}
+
+.AO-scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.AO-scroll-button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.AO-scroll-button.AO-right {
+    right: 0;
+}
+
+.AO-scroll-button.AO-left {
+    left: 0;
+}
+
+/* Image loading states - UPDATED */
+.AO-image-loading {
+    opacity: 1 !important; /* Force show even when loading */
+    background-color: #f8f9fa;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.AO-image-loaded {
+    opacity: 1;
+    background-color: transparent;
+}
+
+/* Remove blinking animation */
+.AO-image-loading {
+    animation: none !important;
+}
+
+/* Text logo styling for fallback */
+.AO-text-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Ensure images always show */
+.AO-ticker-logo,
+.AO-flag-logo {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+}
+
+/* Make sure images are visible */
+.AO-ticker-logo[src],
+.AO-flag-logo[src] {
+    display: block;
+    visibility: visible;
+}
+
+/* Community Trends Specific Styles */
+.AO-community-trends .AO-scroll-content {
+    gap: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(20% - 16px);
+}
+
+.AO-community-trends .AO-ticker-card {
+    min-width: 250px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 100px;
+}
+
+.AO-community-trends .AO-ticker-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.AO-community-trends .AO-ticker-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-color: #f8f9fa;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: block;
+    object-fit: contain;
+    min-width: 48px;
+    min-height: 48px;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-community-trends .AO-ticker-info {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    min-width: 0;
+}
+
+.AO-community-trends .AO-ticker-symbol {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.AO-community-trends .AO-ticker-name {
+    font-size: 13px;
+    color: #666666;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.AO-community-trends .AO-ticker-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.AO-community-trends .AO-price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.AO-community-trends .AO-ticker-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.AO-community-trends .AO-ticker-currency {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 4px;
+}
+
+.AO-community-trends .AO-ticker-change {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.AO-community-trends .AO-ticker-change.up {
+    color: #00a86b;
+    background-color: rgba(0, 168, 107, 0.1);
+}
+
+.AO-community-trends .AO-ticker-change.down {
+    color: #ff4444;
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+/* Hide unnecessary elements for community trends */
+.AO-community-trends .AO-ticker-title-container,
+.AO-community-trends .AO-ticker-status,
+.AO-community-trends .AO-data-mode,
+.AO-community-trends .AO-market-status,
+.AO-community-trends .AO-price-digit {
+    display: none;
+}
+
+/* Regular Ticker Cards (for other sections) */
+.AO-ticker-card {
+    min-width: 280px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-ticker-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.AO-ticker-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.AO-ticker-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: block;
+    object-fit: contain;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-ticker-info {
+    text-decoration: none;
+    color: inherit;
+}
+
+.AO-ticker-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.AO-ticker-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #666666;
+}
+
+.AO-ticker-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+}
+
+.AO-data-mode {
+    background: #2962ff;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.AO-market-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666666;
+}
+
+.AO-status-icon {
+    width: 8px;
+    height: 8px;
+    background: #4caf50;
+    border-radius: 50%;
+}
+
+.AO-ticker-symbol {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.AO-ticker-price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.AO-ticker-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.AO-price-digit {
+    font-size: 14px;
+}
+
+.AO-price-digit.up {
+    color: #00a86b;
+}
+
+.AO-price-digit.down {
+    color: #ff4444;
+}
+
+.AO-ticker-currency {
+    font-size: 14px;
+    color: #999999;
+}
+
+.AO-ticker-change {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.AO-ticker-change.up {
+    color: #00a86b;
+    background-color: rgba(0, 168, 107, 0.1);
+}
+
+.AO-ticker-change.down {
+    color: #ff4444;
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+/* Idea Cards */
+.AO-ideas-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(300px, 1fr);
+    gap: 16px;
+}
+
+.AO-idea-card {
+    min-width: 300px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-idea-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AO-idea-text {
+    padding: 16px;
+}
+
+.AO-idea-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.AO-idea-title:hover {
+    color: #2962ff;
+}
+
+.AO-idea-description {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.AO-idea-preview {
+    position: relative;
+    height: 120px;
+    background: #fafafa;
+}
+
+.AO-preview-grid {
+    position: relative;
+    height: 100%;
+}
+
+.AO-preview-corner {
+    position: absolute;
+    z-index: 2;
+}
+
+.AO-preview-corner.AO-top-right {
+    top: 8px;
+    right: 8px;
+}
+
+.AO-preview-corner.AO-bottom-left {
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.AO-logo-icon img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-strategy-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.AO-strategy-icon.long {
+    background: #00a86b;
+    color: white;
+}
+
+.AO-strategy-icon.short {
+    background: #ff4444;
+    color: white;
+}
+
+.AO-idea-meta {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.AO-idea-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.AO-author-link {
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.AO-author-link:hover {
+    color: #000000;
+}
+
+.AO-publish-date {
+    font-size: 12px;
+    color: #999999;
+}
+
+.AO-idea-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.AO-comment-button,
+.AO-boost-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 6px 8px;
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.AO-comment-button:hover,
+.AO-boost-button:hover {
+    background: #f0f0f0;
+    color: #000000;
+}
+
+/* Hotlist Widgets */
+.AO-hotlist-widgets {
+    margin-bottom: 32px;
+}
+
+.AO-widgets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.AO-widget-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-widget-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.AO-widget-footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 16px;
+}
+
+.AO-more-button {
+    color: #2962ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.AO-more-button:hover {
+    text-decoration: underline;
+}
+
+/* Tabs */
+.AO-tabs-container {
+    margin-bottom: 16px;
+}
+
+.AO-tabs {
+    display: flex;
+    gap: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.AO-tab {
+    all: unset;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #666666;
+    transition: all 0.2s;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.AO-tab:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.AO-tab.active {
+    color: #2962ff;
+    position: relative;
+}
+
+.AO-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 12px;
+    right: 12px;
+    height: 2px;
+    background: #2962ff;
+    border-radius: 1px;
+}
+
+.AO-tab:hover {
+    color: #000000;
+}
+
+/* Earnings Calendar */
+.AO-earnings-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(250px, 1fr);
+    gap: 16px;
+}
+
+.AO-earning-card {
+    min-width: 250px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-earning-card:hover {
+    transform: translateY(-2px);
+    color: inherit;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AO-earning-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.AO-earning-date {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.AO-earning-time {
+    font-size: 14px;
+    color: #666666;
+}
+
+.AO-earning-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.AO-earning-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-earning-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.AO-earning-symbol {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.AO-earning-company {
+    font-size: 12px;
+    color: #666666;
+}
+
+.AO-earning-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.AO-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.AO-stat-title {
+    font-size: 12px;
+    color: #666666;
+}
+
+.AO-stat-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* News Grid */
+.AO-news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.AO-news-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-news-card:hover {
+    transform: translateY(-2px);
+    color: inherit;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AO-news-article {
+    height: 100%;
+}
+
+.AO-news-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.AO-news-symbols {
+    display: flex;
+    gap: 4px;
+}
+
+.AO-news-logo {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-news-time {
+    font-size: 12px;
+    color: #666666;
+}
+
+.AO-news-source {
+    font-size: 12px;
+    color: #666666;
+}
+
+.AO-news-title {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000000;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* See All Cards */
+.AO-see-all-card {
+    min-width: 120px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.AO-see-all-card:hover {
+    background: #f0f0f0;
+    color: #2962ff;
+}
+
+.AO-see-all-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.AO-arrow {
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+    .AO-community-trends .AO-scroll-content {
+        grid-auto-columns: calc(20% - 16px);
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .AO-community-trends .AO-scroll-content {
+        grid-auto-columns: calc(25% - 15px);
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .AO-community-trends .AO-scroll-content {
+        grid-auto-columns: calc(33.333% - 14px);
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .AO-community-trends .AO-scroll-content {
+        grid-auto-columns: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 575px) {
+    .AO-community-trends .AO-scroll-content {
+        grid-auto-columns: calc(100% - 0px);
+    }
+    
+    .AO-community-trends .AO-ticker-card {
+        min-width: 200px;
+        padding: 16px;
+    }
+    
+    .AO-community-trends .AO-ticker-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .AO-community-trends .AO-ticker-symbol {
+        font-size: 16px;
+    }
+    
+    .AO-community-trends .AO-ticker-price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .AO-section-container {
+        padding: 0 12px;
+    }
+
+    .AO-widgets-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .AO-ideas-grid {
+        grid-auto-columns: minmax(280px, 1fr);
+    }
+
+    .AO-community-trends .AO-ticker-card {
+        min-width: 160px;
+    }
+
+    .AO-ticker-card {
+        min-width: 180px;
+    }
+
+    .AO-earning-card {
+        min-width: 220px;
+    }
+
+    .AO-news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .AO-section-title {
+        font-size: 20px;
+    }
+
+    .AO-widget-title {
+        font-size: 16px;
+    }
+
+    .AO-community-trends .AO-ticker-card {
+        min-width: 140px;
+        padding: 10px;
+    }
+
+    .AO-ticker-card {
+        min-width: 160px;
+        padding: 12px;
+    }
+
+    .AO-idea-card {
+        min-width: 260px;
+    }
+
+    .AO-earning-card {
+        min-width: 200px;
+    }
+
+    .AO-tabs {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .AO-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .AO-tab {
+        white-space: nowrap;
+    }
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+    .AO-stocks-section {
+        background: #ffffff !important;
+        color: #333333 !important;
+    }
+    
+    .AO-community-trends .AO-ticker-card,
+    .AO-ticker-card,
+    .AO-idea-card,
+    .AO-earning-card,
+    .AO-news-card,
+    .AO-widget-card,
+    .AO-see-all-card {
+        background: #ffffff !important;
+        border-color: #e0e0e0 !important;
+        color: #333333 !important;
+    }
+    
+    .AO-section-title,
+    .AO-widget-title,
+    .AO-community-trends .AO-ticker-symbol,
+    .AO-community-trends .AO-ticker-price,
+    .AO-ticker-symbol,
+    .AO-ticker-price,
+    .AO-idea-title,
+    .AO-earning-symbol,
+    .AO-news-title {
+        color: #000000 !important;
+    }
+}

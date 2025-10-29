@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ✅ Hero section full screen */
+/* ✅ Hero section full screen + proper alignment */
+.hero-section {
+  background: transparent;
+  width: 100%;
+  margin-top: 40px;
+  min-height: 100vh;
+  /* ek screen cover */
+  display: flex;
+  flex-direction: column;
+  /* text aur button vertically stack */
+  align-items: center;
+  /* horizontally center */
+  justify-content: center;
+  /* vertically center */
+  text-align: center;
+  /* text bhi center */
+  padding: 20px;
+}
+
+
+
+.hero-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.top-text {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper for center alignment */
+.smoilty-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* The thin glowing line */
+.line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  opacity: 0.7;
+  margin-top: 50px;
+}
+
+/* Button Style like screenshot */
+.smoilty-text {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 999px;
+  cursor: default;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  margin-top: 40px;
+}
+
+.smoilty-text:hover {
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
+}
+
+.hero-text {
+  margin-bottom: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-top: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: #c8c9cc;
+  text-align: center;
+  max-width: 700px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+/* CTA Button Styles */
+.hero-cta-section {
+  /* margin: 20px 0 40px 0; */
+  text-align: center;
+  /* margin-top: -160px;  */
+  margin-left: -460px;
+}
+
+.hero-cta-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  margin-top: -40px;
+  margin-left: 450px;
+}
+
+.cta-button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container Styles */
+.image-container {
+  /* margin: 20px 0 0 0; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: -10px; */
+  margin-top: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ----------------- RESPONSIVE DESIGN ----------------- */
+
+/* ----------------- DEVICE SPECIFIC MEDIA QUERIES ----------------- */
+
+/* iPhone SE (375x667) */
+@media screen and (max-width: 380px) and (max-height: 670px) {
+  .hero-content h1 {
+    font-size: 1rem;
+    margin-top: -100px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.55rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.5rem;
+    padding: 6px 12px;
+    margin-top: -10px;
+  }
+}
+
+/* iPhone XR (414x896) */
+@media screen and (max-width: 416px) and (max-height: 900px) {
+  .hero-section {
+    margin-top: -10px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.6rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    margin-top: -300px;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 0.7;
+    margin-top: -300px;
+  }
+
+
+}
+
+/* iPhone 12 Pro (390x844) */
+@media screen and (max-width: 400px) and (max-height: 847px) {
+  .hero-section {
+    margin-top: -60px;
+  }
+
+  .hero-content {
+    font-size: .4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.1rem;
+    margin-top: -110px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.3rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    margin-top: -150px;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 0.7;
+    margin-top: -150px;
+  }
+}
+
+/* iPhone 14 Pro Max (430x932) */
+@media screen and (max-width: 435px) and (max-height: 935px) {
+  .hero-section {
+    margin-top: -80px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.25rem;
+    margin-top: -120px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.6rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    margin-top: -170px;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 0.7;
+    margin-top: -170px;
+  }
+}
+
+/* Pixel 7 (412x915) */
+@media screen and (max-width: 412px) and (max-height: 915px) {
+  .hero-content h1 {
+    font-size: 1.2rem;
+    margin-top: -115px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.55rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Samsung Galaxy S8+ (360x740) */
+@media screen and (max-width: 365px) and (max-height: 745px) {
+  .hero-section {
+    margin-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 0.95rem;
+    margin-top: -9px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.1rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.65rem;
+    padding: 5px 10px;
+    margin-top: -150px;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 1;
+    margin-top: -100px;
+  }
+}
+
+/* iPad Mini / Tablet (768x1024) */
+@media screen and (max-width: 769px) and (max-height: 1024px) {
+  .hero-section {
+    margin-top: -60px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-top: -50px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    margin-top: -190px;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 1;
+    margin-top: -190px;
+  }
+
+}
+
+/* iPad Air (820x1180) */
+@media screen and (max-width: 825px) and (max-height: 1185px) {
+  .hero-section {
+    margin-top: -120px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+    margin-top: -50px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .smoilty-text {
+    font-size: 0.95rem;
+    padding: 10px 22px;
+    margin-top: -200px;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    opacity: 1;
+    margin-top: -200px;
+  }
+}
+
+/* Small laptop / 1024x600 */
+@media screen and (max-width: 1030px) and (max-height: 605px) {
+  .hero-section {
+    margin-top: -200px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large desktop / 1280x800 */
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}

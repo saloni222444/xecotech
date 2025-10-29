@@ -1,0 +1,52 @@
+.Refer-container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: #000000;
+    color: white;
+}
+
+.Refer-section {
+    text-align: center;
+    justify-content: center;
+}
+
+.Refer-section-heading {
+    font-size: 4rem;
+    color: blue;
+    padding-top: 4rem;
+}
+
+.Refer-section-para {
+    padding-top: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    font-size: 2rem;
+    max-width: 900px;
+}
+
+.get-referral-link {
+    border: 2px solid blue;
+    cursor: pointer;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    background-color: blue;
+    transition: 0.2s;
+}
+
+.get-referral-link:hover {
+    padding: 1rem 3rem;
+    border: none;
+    background-color: white;
+    color: #000000;
+
+}
+
+.refer-terms-condition {
+    padding-top: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}

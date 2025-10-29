@@ -1,0 +1,74 @@
+/* 🔹 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset for full coverage */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Shared background full screen */
+.shared-bg {
+  background: url('7587bd226ed0540ab57065db29d12e30.jpg') no-repeat center center;
+  background-size: cover;  
+  background-position: center;
+  background-attachment: fixed; 
+  width: 100%;
+  min-height: 320vh; /* Change height to min-height */
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Ensure content flows properly */
+.main-content {
+  background-color: rgb(255, 255, 255);
+  margin-top: 310px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero section ki height badhao */
+.hero-section {
+  height: 100vh; /* Full screen height */
+  min-height: 800px; /* Minimum height set karo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content {
+  margin-top: 250px; /* Text ko aur niche karo */
+  text-align: center;
+}
+
+/* .main-content{
+  background-color: rgb(255, 255, 255);
+  margin-top: 310px;
+} */
+
+/* Brokers pages ke liye alag background */
+.brokers-bg {
+  background: #0a0e17; /* Solid color ya different background */
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+

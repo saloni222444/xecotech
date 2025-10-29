@@ -1,0 +1,662 @@
+/* Broker Awards Container */
+.HO-broker-awards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.HO-go-broker-awards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Awards Sections */
+.HO-awards-sections {
+  margin-bottom: 80px;
+}
+
+.HO-go-awards-sections {
+  margin-bottom: 80px;
+}
+
+.HO-award-section-container {
+  margin-bottom: 80px;
+}
+
+.HO-go-award-section-container {
+  margin-bottom: 80px;
+}
+
+/* Section Header */
+.HO-section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.HO-go-section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.HO-section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+.HO-go-section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+.HO-section-subtitle {
+  font-size: 18px;
+  color: #8c8c8c;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.HO-go-section-subtitle {
+  font-size: 18px;
+  color: #8c8c8c;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Cards Container */
+.HO-cards-container {
+  display: grid;
+  gap: 28px;
+}
+
+.HO-go-cards-container {
+  display: grid;
+  gap: 28px;
+}
+
+/* Grid Layouts */
+.HO-best-of-best-grid {
+  grid-template-columns: 1fr;
+}
+
+.HO-global-champions-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.HO-asset-classes-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.HO-region-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.HO-forex-cfd-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+/* Full Width Container */
+.HO-full-width-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.HO-go-full-width-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Special Gold Card - Exact match with image */
+.gold-award-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #FFD700;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  width: 100%;
+  max-width: 400px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+}
+
+.gold-award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(255, 215, 0, 0.4);
+  border-color: #FFD700;
+}
+
+/* Gold Card Special Effects */
+.gold-award-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(255, 215, 0, 0.1) 0%, 
+    rgba(255, 215, 0, 0.05) 50%, 
+    rgba(255, 215, 0, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gold-award-card:hover::before {
+  opacity: 1;
+}
+
+.gold-shimmer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.3),
+    transparent
+  );
+  transition: left 1s ease;
+}
+
+.gold-award-card:hover .gold-shimmer {
+  left: 100%;
+}
+
+/* Gold Card Content */
+.gold-card-content {
+  padding: 40px 32px;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+}
+
+.gold-card-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+  border-radius: 20px;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFD700;
+}
+
+.gold-card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gold-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.gold-card-broker {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Regular Award Cards */
+.HO-award-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  position: relative;
+  min-height: 320px;
+}
+
+.HO-go-award-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  position: relative;
+  min-height: 320px;
+}
+
+.HO-award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.HO-go-award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.HO-custom-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--card-color-1), var(--card-color-2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.HO-go-custom-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--card-color-1), var(--card-color-2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.HO-custom-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--card-color-1), var(--card-color-2));
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+
+.HO-go-custom-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--card-color-1), var(--card-color-2));
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+
+.HO-award-card:hover .HO-custom-gradient {
+  opacity: 0.2;
+}
+
+.HO-go-award-card:hover .HO-go-custom-gradient {
+  opacity: 0.2;
+}
+
+.HO-overflow-content {
+  padding: 36px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.HO-go-overflow-content {
+  padding: 36px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.HO-logo-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: white;
+  padding: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.HO-go-logo-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: white;
+  padding: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.HO-logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.HO-go-logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.HO-about-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.HO-go-about-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.HO-award-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f2f2f2;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.HO-go-award-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f2f2f2;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.HO-award-broker {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2962ff;
+  line-height: 1.2;
+}
+
+.HO-go-award-broker {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2962ff;
+  line-height: 1.2;
+}
+
+/* Card Type Colors */
+.HO-silver {
+  --card-color-1: #c0c0c0;
+  --card-color-2: #e8e8e8;
+}
+
+.HO-violet {
+  --card-color-1: #8b5cf6;
+  --card-color-2: #c4b5fd;
+}
+
+.HO-green {
+  --card-color-1: #10b981;
+  --card-color-2: #34d399;
+}
+
+.HO-blue {
+  --card-color-1: #3b82f6;
+  --card-color-2: #60a5fa;
+}
+
+/* CTA Section */
+.DO-gradient-wrapper {
+  background: linear-gradient(135deg, #0F1B2A 0%, #1A202C 100%);
+  border-radius: 20px;
+  margin-top: 24px;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.DO-content-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.DO-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.DO-cta-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.DO-round-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.DO-round-button:hover {
+  background: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.DO-round-button.DO-black {
+  background: #000000;
+  color: #ffffff;
+}
+
+.DO-round-button.DO-black:hover {
+  background: #333333;
+}
+
+.DO-round-button.DO-primary {
+  background: #1E90FF;
+  color: #ffffff;
+}
+
+.DO-round-button.DO-primary:hover {
+  background: #1C86EE;
+}
+
+/* Share Buttons */
+.DO-share-container {
+  margin-top: 48px;
+}
+
+.DO-share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.DO-social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.DO-social-button:hover {
+  background: #555555;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.DO-social-button.DO-copied {
+  background: #4CAF50;
+  color: #ffffff;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .HO-broker-awards-container {
+    padding: 60px 16px 40px;
+  }
+  
+  .HO-cards-container {
+    gap: 24px;
+  }
+  
+  .HO-global-champions-grid,
+  .HO-asset-classes-grid,
+  .HO-region-grid,
+  .HO-forex-cfd-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .HO-broker-awards-container {
+    padding: 40px 12px 32px;
+  }
+  
+  .HO-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .HO-section-title {
+    font-size: 32px;
+  }
+  
+  .HO-gradient-wrapper {
+    padding: 60px 24px;
+  }
+  
+  .HO-cta-title {
+    font-size: 36px;
+  }
+  
+  .HO-cta-text {
+    font-size: 18px;
+  }
+  
+  .HO-content-wrapper {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HO-broker-awards-container {
+    padding: 32px 8px 24px;
+  }
+  
+  .HO-overflow-content {
+    padding: 28px 20px;
+  }
+  
+  .HO-logo-container {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .HO-award-broker {
+    font-size: 20px;
+  }
+  
+  .HO-share-buttons {
+    gap: 12px;
+  }
+  
+  .HO-social-button {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .HO-cta-title {
+    font-size: 32px;
+  }
+  
+  .HO-cta-text {
+    font-size: 16px;
+  }
+  
+  .HO-round-button {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+  
+  .HO-gold-card-content {
+    padding: 32px 24px;
+  }
+  
+  .HO-gold-card-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .HO-gold-card-title {
+    font-size: 24px;
+  }
+  
+  .HO-gold-card-broker {
+    font-size: 28px;
+  }
+}

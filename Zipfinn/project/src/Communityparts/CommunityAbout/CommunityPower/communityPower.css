@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body {
+    background-image: url('../../../assets/images/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.community-power-body {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+}
+
+.community-power-section {
+    padding-top: 10rem;
+}
+
+.community-power-section h1 {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    max-width: 800px;
+    margin: auto;
+}
+
+.community-power-section span {
+    color: blue;
+}
+
+.community-power-section p {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: white;
+}
+
+.community-power-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.community-power-content video {
+    max-width: 800px;
+    margin: 5rem;
+    border: 2px solid;
+    box-shadow: 2px 2px 20px 20.1px rgba(0, 162, 255, 0.452);
+    border-image: linear-gradient(45deg, #eeff00, #0084ff, #ff00c8, #f00048f3)1;
+}
+
+@media screen and (max-width:700px) {
+    .community-power-section h1 {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .community-power-content video {
+        max-width:300px;
+        margin: 2rem;
+    }
+}
+@media screen and (max-width:1025px) {
+
+    .community-power-content video{
+       max-width:400px;
+    }
+}

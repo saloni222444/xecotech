@@ -1,0 +1,79 @@
+.Leaderboard-section h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.number-and-profile {
+    display: flex;
+    gap: 2rem;
+}
+
+.number-and-profile p {
+    display: flex;
+    gap: 1rem;
+}
+
+.number-and-profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 1.5rem;
+}
+
+.Leaderboard-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.Leaderboard-heading {
+    width: 300px;
+    font-size: 14px;
+    padding-left: 2rem;
+}
+
+.Leaderboard-section-heading {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(136, 133, 133);
+}
+
+.Leaderboard-section-heading-api {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: 600;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 2px solid rgb(126, 122, 122);
+}
+
+@media screen and (max-width:700px) {
+    .Leaderboard-section h1 {
+        font-size: 3rem;
+    }
+
+    .number-and-profile img {
+        margin: 0;
+    }
+
+    .Leaderboard-heading {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Leaderboard-heading-Realized-profit {
+        display: none;
+    }
+    .Leaderboard-section{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:1025px) {
+    .Leaderboard-section{
+        padding: 2rem;
+    }
+}

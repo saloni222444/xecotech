@@ -1,0 +1,251 @@
+/* TopStories.css */
+
+/* Container */
+.ok-container-oFtCtY_t {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:  0px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.ok-header-oFtCtY_t {
+  margin-bottom: 20px;
+}
+
+.ok-wrapper-HeCy_Rm7 {
+  display: flex;
+  align-items: center;
+}
+
+.ok-titleAndHintWrapper-HeCy_Rm7 {
+  display: flex;
+  align-items: center;
+}
+
+.ok-container-HeCy_Rm7 {
+  display: inline-block;
+}
+
+.ok-containerLink-HeCy_Rm7 {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ok-title-HeCy_Rm7 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #131722;
+  display: flex;
+  align-items: center;
+}
+
+.ok-noBreak-HkGXK524 {
+  white-space: nowrap;
+}
+
+.ok-arrowIcon-HeCy_Rm7 {
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Content */
+.ok-content-oFtCtY_t {
+  margin-bottom: 24px;
+}
+
+.ok-grid-iTt_Zp4a {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Cards */
+.ok-card-DmjQR0Aa {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e0e3eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.ok-card-DmjQR0Aa:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.ok-article-DmjQR0Aa {
+  padding: 16px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.ok-container-DmjQR0Aa {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ok-header-DmjQR0Aa {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #787b86;
+}
+
+.ok-stack-L2E26Swf {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 8px;
+}
+
+.ok-stack--xxxsmall-L2E26Swf {
+  gap: 4px;
+}
+
+.ok-logo-PsAlMQQF {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.ok-xxxsmall-PsAlMQQF {
+  width: 16px;
+  height: 16px;
+}
+
+.ok-letter-PsAlMQQF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f3fa;
+  color: #131722;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.ok-date-TUPxzdRV {
+  margin-right: 8px;
+}
+
+.ok-doth-TUPxzdRV::after {
+  content: "•";
+  margin-left: 8px;
+}
+
+.ok-title-DmjQR0Aa {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #131722;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Footer */
+.ok-footer-oFtCtY_t {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.ok-button-hLc5LYm1 {
+  display: inline-flex;
+  align-items: left;
+  /* justify-content: center; */
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2962ff;
+  background-color: transparent;
+  border: 1px solid #2962ff;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.ok-button-hLc5LYm1:hover {
+  background-color: #2962ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ok-background-H6_2ZGVv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.ok-content-H6_2ZGVv {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.ok-arrowIcon-hLc5LYm1 {
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ok-container-oFtCtY_t {
+    padding: 0 12px;
+  }
+  
+  .ok-title-HeCy_Rm7 {
+    font-size: 20px;
+  }
+  
+  .ok-grid-iTt_Zp4a {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .ok-article-DmjQR0Aa {
+    padding: 12px;
+  }
+  
+  .ok-title-DmjQR0Aa {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ok-container-oFtCtY_t {
+    padding: 0 8px;
+  }
+  
+  .ok-title-HeCy_Rm7 {
+    font-size: 18px;
+  }
+  
+  .ok-header-DmjQR0Aa {
+    flex-wrap: wrap;
+  }
+  
+  .ok-stack-L2E26Swf {
+    margin-bottom: 4px;
+  }
+}

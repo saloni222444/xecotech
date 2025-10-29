@@ -1,0 +1,146 @@
+.FO-broker1-section {
+  width: 100%;
+  background: #fff;
+  padding: 100px 50px;
+  font-family: "Inter", sans-serif;
+}
+
+/* --- Header --- */
+.FO-broker1-header {
+  margin-bottom: 34px;
+}
+
+.FO-broker1-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827; /* text-gray-900 */
+}
+
+.FO-broker1-header h2 span {
+  white-space: nowrap;
+}
+
+.FO-broker1-header p {
+  margin-top: 4px;
+  font-size: 18px;
+  color: #4b5563; /* text-gray-600 */
+}
+
+/* --- Card --- */
+.FO-Trading-broker1-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  background: #000;
+  color: #fff;
+  border-radius: 34px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Content */
+.FO-broker1-card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.FO-broker1-card p {
+  font-size: 14px;
+  color: #9ca3af; /* text-gray-400 */
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+/* Rating */
+.FO-broker1-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.FO-broker1-rating .FO-score {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.FO-broker1-rating .FO-label {
+  font-size: 14px;
+  color: #d1d5db;
+  margin-left: 30px;
+}
+
+.FO-broker1-rating .FO-stars {
+  display: flex;
+  color: #facc15; /* yellow-400 */
+}
+
+/* Stats */
+.FO-broker1-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #d1d5db;
+  margin-left: 30px;
+}
+
+.FO-broker1-stats span {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* Button */
+.FO-broker1-btn {
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 30px;
+}
+
+.FO-broker1-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Right Logo */
+.FO-broker1-logo {
+  display: inline-block;
+  width: 398px;
+  height: 350px;
+}
+
+.FO-broker1-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .FO-broker1-logo {
+    width: 250px;
+    height: 228px;
+  }
+}
+
+@media (max-width: 480px) {
+  .FO-broker1-logo {
+    width: 200px;
+    height: 182px;
+  }
+}

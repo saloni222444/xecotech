@@ -1,0 +1,65 @@
+
+.community-sweet-profit-container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.community-sweet-profit-heading {
+    padding-top: 5rem;
+    font-size: 4rem;
+    width: 800px;
+    margin: auto;
+}
+
+.community-sweet-profit-heading span {
+    color: rgb(17, 0, 255);
+}
+
+.community-sweet-profit-total {
+    font-size: 5rem;
+    padding-top: 3rem;
+}
+
+.community-sweet-profit-para {
+    padding-top: 2rem;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+}
+
+.Refer-friend-btns {
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 0.2s;
+    background-color: blue;
+    border: none;
+    margin: 1rem;
+}
+
+.community-sweet-profit-friend-partner-btns {
+    padding-top: 2rem;
+}
+
+.Refer-friend-btns:hover {
+    background-color: white;
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+@media screen and (max-width:700px) {
+    .community-sweet-profit-heading {
+    padding-top: 5rem;
+    font-size: 3rem;
+   max-width: 400px;
+   margin: auto;
+}
+}

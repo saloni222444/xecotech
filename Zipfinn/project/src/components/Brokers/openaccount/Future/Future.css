@@ -1,0 +1,579 @@
+/* Futures Brokers Page Styles */
+.futures-brokers-page {
+  min-height: 100vh;
+  background: #1e1e1e;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+}
+
+/* Futures Header Styles */
+.futures-brokers-header {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.futures-header-content .futures-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.futures-header-content .futures-subtitle {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+}
+
+.futures-header-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.futures-sort-dropdown {
+  margin-bottom: 10px;
+}
+
+.futures-sort-button {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.futures-sort-button:hover {
+  background: #333;
+  border-color: #666;
+}
+
+.futures-tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.futures-tab {
+  background: #2a2a2a;
+  border: none;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.futures-tab.futures-tab--active {
+  background: #0066ff;
+  color: #ffffff;
+}
+
+.futures-tab:hover:not(.futures-tab--active) {
+  background: #333;
+}
+
+/* Futures Brokers Grid */
+.futures-brokers-grid {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.futures-broker-card {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.futures-broker-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.futures-broker-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.futures-broker-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #00d4ff, #0099ff);
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.futures-broker-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.futures-broker-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.futures-broker-info {
+  position: relative;
+  z-index: 1;
+}
+
+.futures-broker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.futures-broker-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.futures-broker-plan {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.futures-broker-plan.futures-broker-plan--silver {
+  background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+  color: #000;
+}
+
+.futures-broker-assets {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Futures Features */
+.futures-features {
+  margin-bottom: 15px;
+}
+
+.futures-features-title {
+  font-size: 0.9rem;
+  color: #00d4ff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.futures-features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.futures-feature-tag {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.futures-broker-rating {
+  margin-bottom: 20px;
+}
+
+.futures-rating-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.futures-rating-number {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.futures-rating-number span:first-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.futures-rating-text {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+.futures-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.futures-star {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.futures-star.futures-star--filled {
+  color: #ffd700;
+}
+
+.futures-star.futures-star--half {
+  background: linear-gradient(90deg, #ffd700 50%, #444 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.futures-broker-metrics {
+  display: flex;
+  gap: 20px;
+}
+
+.futures-metric {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.futures-metric-icon {
+  font-size: 1rem;
+}
+
+.futures-metric-value {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.futures-metric-label {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+}
+
+.futures-promotion {
+  margin-bottom: 20px;
+}
+
+.futures-promotion-content {
+  background: rgba(0, 212, 255, 0.05);
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.futures-promotion-value {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #00d4ff;
+}
+
+.futures-promotion-title {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+}
+
+.futures-broker-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.futures-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.futures-btn.futures-btn--primary {
+  background: linear-gradient(135deg, #0066ff, #00d4ff);
+  color: #ffffff;
+}
+
+.futures-btn.futures-btn--primary:hover {
+  background: linear-gradient(135deg, #0055dd, #00c4ef);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.futures-btn.futures-btn--secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+.futures-btn.futures-btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #666;
+}
+
+.futures-btn-icon {
+  font-size: 0.9rem;
+}
+
+/* Futures Stats Section */
+.futures-stats-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(0, 102, 255, 0.05));
+  border-radius: 24px;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.futures-stats-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.futures-stats-title div:last-child {
+  background: linear-gradient(135deg, #00d4ff, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.futures-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.futures-stat-item {
+  text-align: center;
+}
+
+.futures-stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+.futures-stat-description {
+  color: #b0b0b0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design for Futures Section */
+@media (max-width: 768px) {
+  .futures-brokers-page {
+    padding: 15px;
+  }
+
+  .futures-header-content .futures-main-title {
+    font-size: 2.2rem;
+  }
+
+  .futures-header-content .futures-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .futures-tabs-container {
+    gap: 8px;
+  }
+
+  .futures-tab {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .futures-brokers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .futures-broker-card {
+    padding: 20px;
+  }
+
+  .futures-broker-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .futures-broker-metrics {
+    justify-content: space-between;
+  }
+
+  .futures-broker-actions {
+    flex-direction: column;
+  }
+
+  .futures-stats-title {
+    font-size: 2rem;
+  }
+
+  .futures-stat-number {
+    font-size: 2.5rem;
+  }
+
+  .futures-stats-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .futures-brokers-page {
+    padding: 10px;
+  }
+
+  .futures-header-content .futures-main-title {
+    font-size: 1.8rem;
+  }
+
+  .futures-header-content .futures-subtitle {
+    font-size: 1rem;
+  }
+
+  .futures-brokers-grid {
+    padding: 0 5px;
+  }
+
+  .futures-broker-card {
+    padding: 16px;
+  }
+
+  .futures-broker-name {
+    font-size: 1.3rem;
+  }
+
+  .futures-rating-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .futures-stats-title {
+    font-size: 1.6rem;
+  }
+
+  .futures-stat-number {
+    font-size: 2rem;
+  }
+
+  .futures-features-list {
+    justify-content: center;
+  }
+}
+
+/* Dark theme adjustments for futures */
+@media (prefers-color-scheme: light) {
+  .futures-brokers-page {
+    background: #f9f9f9;
+    color: #000000;
+  }
+
+  .futures-broker-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  }
+
+  .futures-broker-card::before {
+    background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+  }
+
+  .futures-broker-name {
+    color: #000000;
+  }
+
+  .futures-broker-assets {
+    color: #666;
+  }
+
+  .futures-rating-text {
+    color: #666;
+  }
+
+  .futures-metric-label {
+    color: #666;
+  }
+
+  .futures-sort-button, .futures-tab {
+    background: #f0f0f0;
+    color: #000000;
+    border-color: #ddd;
+  }
+
+  .futures-tab.futures-tab--active {
+    background: #0066ff;
+    color: #ffffff;
+  }
+
+  .futures-btn.futures-btn--secondary {
+    color: #000000;
+    border-color: #ddd;
+  }
+
+  .futures-btn.futures-btn--secondary:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .futures-stat-description {
+    color: #666;
+  }
+
+  .futures-stats-section {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 102, 255, 0.1));
+    border-color: rgba(0, 212, 255, 0.2);
+  }
+}

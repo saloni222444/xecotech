@@ -1,0 +1,330 @@
+.community-section {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.community-head {
+    background-image: url('../../assets/images/abg6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.comm-ide {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    max-width: 200px;
+}
+
+.comm-ide .ideas {
+    color: rgb(129, 128, 128);
+    font-size: 1rem;
+}
+
+.comm-ide .community {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding-top: 5rem;
+}
+
+.comm-ide span {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.community-ideas {
+    color: rgb(34, 49, 255);
+    margin-top: 4rem;
+    text-align: center;
+    max-width: 900px;
+}
+
+.community-ideas h1 {
+    margin-top: 5rem;
+    font-size: 6rem;
+    margin-bottom: 5.5rem;
+}
+
+.editors {
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 3px 3px 20px rgb(168, 168, 168);
+    color: rgb(0, 0, 0);
+    padding: 0.7rem 1.6rem;
+    border-radius: 50px;
+    background-color: #ececec;
+    transition: 0.3s;
+}
+
+.editors:hover {
+    padding: 0.7rem 3rem;
+    box-shadow: 3px 3px 20px rgb(194, 194, 194);
+    color: rgb(255, 255, 255);
+    background-color: #1900ff;
+}
+
+.populer {
+    font-size: 1rem;
+    box-shadow: 3px 3px 20px black;
+    color: white;
+    padding: 0.7rem 1.6rem;
+    font-weight: 600;
+    margin: 1rem;
+    border-radius: 50px;
+    background-color: blue;
+    transition: 0.3s;
+}
+
+.populer:hover {
+    box-shadow: 3px 3px 20px #979797;
+    color: rgb(0, 0, 0);
+    padding: 0.7rem 3rem;
+    margin: 1rem;
+    border-radius: 50px;
+    background-color: #ececec;
+}
+
+.community-card-Container {
+    max-width: 1400px;
+    margin: auto
+}
+
+.community-card-section {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.commuinty-cards {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: #0f0c1a8f;
+    transition: 0.3s;
+    height: 520px;
+    box-shadow:#0000008f 0px 10px 5px 0px;
+}
+
+.commuinty-cards:hover {
+    transform: scale(1.03);
+}
+
+.img-cards {
+    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.img-cards img {
+    height: 200px;
+    border-radius: 10px;
+    width: 370px;
+}
+
+.card-description {
+    color: white;
+    font-size: 16px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.card-description .title {
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.card-description .title:hover {
+    color: rgb(0, 66, 248);
+}
+
+.card-description .card-para {
+    margin-top: 1rem;
+}
+
+.date-link {
+    padding-left: 1rem;
+}
+
+.date-link p {
+    margin-top: 0.5rem;
+}
+
+.description-links-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-link a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.date-link a:hover {
+    color: rgb(0, 11, 160);
+}
+button {
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+.community-casd-description-btns button {
+    background-color: rgb(14, 14, 41);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    gap: 0.5rem;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.community-casd-description-btns button:hover {
+    color: #000;
+    background-color: rgb(255, 255, 255);
+}
+
+.side-ideas-videos {
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+
+    margin: 2rem;
+}
+
+.side-ideas-videos #ideas {
+    border: none;
+}
+
+.side-ideas-videos button {
+    margin: 2rem;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.side-ideas-videos button:hover {
+    background-color: rgb(211, 203, 203);
+    color: #000;
+}
+
+#ideas {
+    background: blue;
+    font-size: 18px;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#ideas:hover {
+    background-color: rgb(211, 203, 203);
+    color: #000;
+
+}
+
+#option {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    width: 130px;
+}
+
+.side-ideas-videos {
+    margin: auto;
+}
+
+.publication-btns {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.publication-btns button {
+    font-size: 25px;
+    margin: 2rem;
+    color: white;
+    text-align: center;
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 2rem 0;
+    border: 1px solid rgb(70, 57, 57);
+    transition: 0.3s;
+
+}
+
+.publication-btns button:hover {
+    background-color: rgb(236, 225, 225);
+    color: #000;
+}
+
+.main-publication-btns {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+@media screen and (min-width:1400px) {
+
+    .commuinty-cards {
+        margin: 1rem 2.5rem;
+        border-radius: 10px;
+        max-width: 300px;
+        transition: 0.2s;
+    }
+
+    .commuinty-cards:hover {
+        background-color: rgb(223, 214, 214);
+    }
+
+    .img-cards {
+        margin-top: 1rem;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .img-cards img {
+        height: 250px;
+        border-radius: 10px;
+        width: 290px;
+    }
+}
+@media screen and (max-width:1025px) {
+    .community-head {
+    height:80vh;
+}
+.community-ideas h1 {
+    font-size: 3rem;
+}
+}
+@media screen and (max-width:700px) {
+    .community-head {
+    height:60vh;
+}
+.community-ideas h1 {
+    font-size: 3rem;
+}
+}

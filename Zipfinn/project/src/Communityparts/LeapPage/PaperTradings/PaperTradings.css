@@ -1,0 +1,79 @@
+.paper-trading-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.paper-trading-image img {
+    height: 60px;
+    transition: 0.6s;
+    padding: 0 2rem;
+}
+
+.paper-trading-Devaid-section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+}
+
+.paper-trading-image {
+    padding: 2rem;
+    background: #2b2e47;
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 5px;
+}
+/*background-size: 500% 500%;
+ animation: gradientShift 8s ease infinite;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}*/
+.paper-trading-image img:hover {
+    animation: spin 2s linear infinite;
+    height: 70px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.paper-trading-upbody {
+    width: 100px;
+    height: 100px;
+
+}
+
+.paper-tradig-downbody h1 {
+    padding: 2rem 0;
+}
+
+.paper-tradig-downbody p {
+    padding: 0.5rem 0;
+}
+
+.paper-tradig-downbody a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-style: italic;
+    transition: 0.2s;
+}
+
+.paper-tradig-downbody a:hover {
+    color: blue;
+}
+
+@media screen and (max-width:700px) {
+    .paper-trading-Devaid-section {
+        flex-direction: column;
+    }
+}

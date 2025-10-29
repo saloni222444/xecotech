@@ -1,0 +1,117 @@
+.ZipfinnLove-container {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading section */
+.ZipfinnLove-heading-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 8rem;
+  max-width: 880px;
+}
+.ZipfinnLove-heading-section h1{
+  font-size: 6rem;
+}
+.ZipfinnLove-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #574bff, #f3eff0, #c55d67);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.ZipfinnLove-btn {
+  background-color:blue;
+  color:white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.ZipfinnLove-btn:hover {
+  background-color: #d5d5dd;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Image grid */
+.ZipfinnLove-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Each card */
+.ZipfinnLove-card {
+  background: #29293d;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.ZipfinnLove-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 5px 0px rgb(26, 24, 63);
+}
+
+.ZipfinnLove-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.ZipfinnLove-card p {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #c4bebe;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .ZipfinnLove-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ZipfinnLove-heading-section h1{
+  font-size: 3rem;
+}
+}
+
+@media (max-width: 768px) {
+  .ZipfinnLove-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ZipfinnLove-heading-section h1{
+  font-size: 3rem;
+}
+}
+
+@media (max-width: 480px) {
+    .ZipfinnLove-heading-section h1{
+  font-size: 2rem;
+}
+  .ZipfinnLove-images {
+    grid-template-columns: 1fr;
+  }
+  .ZipfinnLove-heading {
+    font-size: 1.8rem;
+  }
+}

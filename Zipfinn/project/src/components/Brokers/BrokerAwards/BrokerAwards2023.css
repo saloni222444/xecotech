@@ -1,0 +1,590 @@
+/* BrokerAwards2023.css - Updated for background images and hover effects */
+.broker-awards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+  font-feature-settings: "tnum" on, "lnum" on;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff; /* White color */
+  background: var(--color-body-bg);
+  flex: 1 0 auto;
+}
+
+/* Header Styles */
+.awards-header {
+  text-align: center;
+  margin-bottom: var(--v-rhythm-spacing-3);
+}
+
+.promo-header {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff; /* White color */
+  line-height: 1.2;
+}
+
+.first-line {
+  display: block;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #ffffff; /* White color */
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Card Block Styles */
+.card-block {
+  margin-bottom: var(--v-rhythm-spacing-2);
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--v-rhythm-spacing-3);
+}
+
+.section-group {
+  margin-bottom: var(--v-rhythm-spacing-4);
+}
+
+.section-title {
+  font-size: 2.5rem; 
+  font-weight: 800;
+  color: #ffffff; 
+  margin-bottom: 44px;
+  display: block;
+  line-height: 1.3;
+  text-transform: uppercase; 
+  letter-spacing: 0.5px; 
+  margin-top: 60px;
+}
+
+.sections-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Card Styles */
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: #000000; /* Black background */
+  border: 1px solid #333333; /* Dark gray border */
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
+  isolation: isolate;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  filter: blur(3.5px);
+  opacity: 0.5;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.card-wrapper {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Custom Logo Styles */
+.custom-logo {
+  width: 36px;
+  height: 28px;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Remove the old TV icon styles if they exist */
+.tv-icon {
+  display: none;
+}
+
+/* Card background images - Use imported SVGs */
+.card-1::before {
+  background-image: url('./card1.svg');
+}
+
+.card-2::before {
+  background-image: url('./card2.svg');
+}
+
+.card-3::before {
+  background-image: url('./card3.svg');
+}
+
+.card-4::before {
+  background-image: url('./card4.svg');
+}
+
+.card-5::before {
+  background-image: url('./card5.svg');
+}
+
+/* For cards 6-12, use appropriate SVGs based on your design */
+.card-6::before {
+  background-image: url('./card1.svg'); /* or whichever pattern you prefer */
+}
+
+.card-7::before {
+  background-image: url('./card2.svg');
+}
+
+.card-8::before {
+  background-image: url('./card3.svg');
+}
+
+.card-9::before {
+  background-image: url('./card4.svg');
+}
+
+.card-10::before {
+  background-image: url('./card5.svg');
+}
+
+.card-11::before {
+  background-image: url('./card1.svg');
+}
+
+.card-12::before {
+  background-image: url('./card2.svg');
+}
+
+/* Card Theme Colors - TradingView Style */
+.theme-winners_2023 {
+  background: var(--color-background-secondary);
+}
+
+.card:hover::before {
+  opacity: 0.8;
+  filter: blur(1.5px);
+}
+
+.card:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px var(--color-overlay-accent-1-normal);
+}
+
+/* Specific hover effects for each card based on their background colors */
+.card-1:hover {
+  border-color: var(--color-tv-yellow-400);
+}
+
+.card-2:hover {
+  border-color: var(--color-sky-blue-400);
+}
+
+.card-3:hover {
+  border-color: var(--color-berry-pink-400);
+}
+
+.card-4:hover {
+  border-color: var(--color-tan-orange-400);
+}
+
+.card-5:hover {
+  border-color: var(--color-deep-blue-400);
+}
+
+.card-6:hover {
+  border-color: var(--color-minty-green-400);
+}
+
+.card-7:hover {
+  border-color: var(--color-grapes-purple-400);
+}
+
+.card-8:hover {
+  border-color: var(--color-forest-green-400);
+}
+
+.card-9:hover {
+  border-color: var(--color-ripe-red-400);
+}
+
+.card-10:hover {
+  border-color: var(--color-banana-yellow-400);
+}
+
+.card-11:hover {
+  border-color: var(--color-iguana-green-400);
+}
+
+.card-12:hover {
+  border-color: var(--color-tv-blue-400);
+}
+
+/* Card Content - All White Text */
+.tv-icon {
+  width: 36px;
+  height: 28px;
+  margin-bottom: 16px;
+  color: #ffffff !important; /* White color with important */
+  flex-shrink: 0;
+}
+
+.tv-icon svg path,
+.tv-icon svg circle {
+  fill: #ffffff !important; /* Force white color for SVG paths */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff !important; /* White color with important */
+  margin-bottom: 20px;
+  line-height: 1.3;
+  min-height: 60px;
+  flex-shrink: 0;
+}
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.card-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #ffffff; /* White background for logo */
+  padding: 8px;
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.broker-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.broker-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff !important; /* White color with important */
+  margin: 0;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.broker-description {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9) !important; /* White with slight transparency */
+  line-height: 1.4;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* CTA Section */
+.BO-gradient-wrapper {
+  background: linear-gradient(135deg, #0F1B2A 0%, #1A202C 100%);
+  border-radius: 20px;
+  margin-top: 24px;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 90px;
+}
+
+.BO-content-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.BO-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.BO-cta-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.BO-round-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.BO-round-button:hover {
+  background: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.BO-round-button.BO-black {
+  background: #000000;
+  color: #ffffff;
+}
+
+.BO-round-button.BO-black:hover {
+  background: #333333;
+}
+
+.BO-round-button.BO-primary {
+  background: #1E90FF;
+  color: #ffffff;
+}
+
+.BO-round-button.BO-primary:hover {
+  background: #1C86EE;
+}
+
+/* Share Buttons */
+.BO-share-container {
+  margin-top: 48px;
+}
+
+.BO-share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.BO-social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.BO-social-button:hover {
+  background: #555555;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.BO-social-button.BO-copied {
+  background: #4CAF50;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .broker-awards-container {
+    padding: 16px;
+    max-width: 100%;
+  }
+  
+  .sections-block {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .promo-header {
+    font-size: 2.5rem;
+  }
+  
+  .BO-cta-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .broker-awards-container {
+    padding: 12px;
+  }
+  
+  .promo-header {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .sections-block {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .section-title {
+    font-size: 0.8rem; /* Mobile के लिए थोड़ा और छोटा */
+    margin-bottom: 32px;
+  }
+  
+  .card-wrapper {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    min-height: 50px;
+  }
+  
+  .card-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .broker-name {
+    font-size: 1.3rem;
+  }
+  
+  .BO-gradient-wrapper {
+    padding: 40px 16px;
+    margin-top: var(--v-rhythm-spacing-3);
+  }
+  
+  .BO-cta-title {
+    font-size: 2rem;
+  }
+  
+  .BO-cta-text {
+    font-size: 1rem;
+  }
+  
+  .BO-round-button {
+    padding: 14px 28px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-header {
+    font-size: 1.75rem;
+  }
+  
+  .section-title {
+    font-size: 0.75rem; /* Mobile के लिए और छोटा */
+    margin-bottom: 24px;
+  }
+  
+  .about-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .broker-info {
+    align-items: center;
+  }
+  
+  .BO-cta-title {
+    font-size: 1.75rem;
+  }
+  
+  .BO-share-buttons {
+    gap: 8px;
+  }
+  
+  .BO-social-button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Dark mode specific adjustments */
+@media (prefers-color-scheme: dark) {
+  .broker-awards-container {
+    color-scheme: dark;
+  }
+  
+  .card {
+    background: #000000; /* Keep black background in dark mode */
+  }
+}
+
+/* Focus styles for accessibility */
+.card:focus-visible,
+.BO-round-button:focus-visible,
+.BO-social-button:focus-visible {
+  outline: 2px solid #1E90FF;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .BO-round-button,
+  .BO-social-button {
+    transition: none;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}

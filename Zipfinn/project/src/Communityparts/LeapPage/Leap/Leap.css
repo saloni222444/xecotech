@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.leap-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.leap-content {
+    text-align: center;
+    justify-content: center;
+}
+
+.leap-section {
+    padding-top: 8rem;
+    margin: auto;
+    max-width: 900px;
+
+}
+
+.leap-section .heading h1 {
+    margin: 1rem;
+    font-size: 6rem;
+    max-width: 650px;
+    margin: auto;
+    font-weight: bold;
+    background: linear-gradient(50deg, #2600ff, #ffffff, rgb(87, 182, 174), #69395d);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600% 600%;
+ animation: gradientShift 8s ease infinite;
+
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.leap-section .heading p {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.leap-section .heading span {
+    color: rgb(0, 38, 255);
+}
+
+.leap-section .leap-paragraph p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 5rem 0;
+}
+
+@media screen and (max-width:700px) {
+    .leap-section .heading h1 {
+        font-size: 3rem;
+    }
+
+}

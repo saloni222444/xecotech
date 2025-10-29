@@ -1,0 +1,146 @@
+.community-PineScript-container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.community-PineScript-section h1 {
+    font-size: 4rem;
+    text-align: center;
+    max-width: 800px;
+    padding-top: 5rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
+
+}
+
+.community-PineScript-section P {
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.community-PineScript-image {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.community-PineScript-image video {
+    cursor: pointer;
+    padding: 1.5rem 0;
+    max-width: 600px;
+    margin: auto;
+    /* filter: blur(3px);
+    transition: filter 0.7s ease;*/
+}
+
+.community-PineScript-image img:hover {
+    filter: blur(0);
+}
+
+.community-PineScript-fore-section {
+    display: flex;
+    padding: 0 3rem;
+    gap: 1.5rem;
+}
+
+.community-PineScript-sections {
+    padding: 0 3rem;
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    cursor: pointer;
+    padding-bottom: 2rem;
+}
+
+.PineScript-sections-link {
+    color: white;
+    transition: 0.2s;
+}
+
+.PineScript-sections-link:hover {
+    color: blue;
+}
+
+.community-PineScript-sections h4 {
+    padding-bottom: 1rem;
+    font-size: 14px;
+}
+
+.community-PineScript-sections p {
+    font-size: 12px;
+}
+
+.community-PineScript-sections img {
+    height: 40px;
+    width: 45px;
+}
+
+@media screen and (max-width:1026px) {
+    .community-PineScript-section h1 {
+        font-size: 3rem;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .community-PineScript-section .PineScript-para {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .community-PineScript-fore-section {
+        flex-direction: column;
+    }
+
+    .community-PineScript-sections {
+        border-bottom: 2px solid rgb(177, 168, 168);
+        width: 100%;
+    }
+    .community-sweet-profit-heading {
+        font-size: 3rem;
+        width: 500px;
+        margin: auto;
+    }
+
+    .community-sweet-profit-heading p {
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    .community-PineScript-image video {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width:700px) {
+      .rightvideos{
+        display: none;
+      }
+    .community-PineScript-section h1 {
+        font-size: 2rem;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .community-PineScript-section .PineScript-para {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .community-PineScript-fore-section {
+        flex-direction: column;
+    }
+
+    .community-PineScript-image img {
+        width: 350px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+}

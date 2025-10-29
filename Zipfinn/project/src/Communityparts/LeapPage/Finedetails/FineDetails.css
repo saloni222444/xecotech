@@ -1,0 +1,117 @@
+.chack-details-container {
+    margin: 1rem;
+    text-align: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.chack-details-heading {
+    font-size: 4rem;
+    padding: 2rem 0;
+    margin: 2rem;
+}
+
+.details-boxes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.details-headings {
+    width: 500px;
+    gap: 1rem;
+    border: 2px solid rgb(224, 217, 217);
+    height: 250px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+.details-headings:hover {
+    transform: scale(1.02);
+    border: 2px solid rgb(151, 147, 147);
+}
+
+.details-headings p {
+    line-height: 1.6rem;
+    padding-top: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size-adjust: 0.6;
+}
+
+.logo-icon-button {
+    display: flex;
+}
+
+.details-headings .logo-icon-button button {
+    background-color: #d4d2d2;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    padding: 0.2rem 0.3rem;
+    font-weight: 600;
+    gap: 3px;
+
+}
+
+.details-headings .logo-icon-button img {
+    height: 20px;
+    border-radius: 100%;
+}
+
+.details-readbtn {
+    margin-top: 2rem;
+    padding: 1.5rem 5rem;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.details-readbtn:hover {
+    color: #000;
+    transform: scale(1.05);
+    background-color: #d4d2d2;
+}
+
+.details-rulls a {
+    text-decoration: none;
+}
+
+.details-rulls p {
+    font-size: 20px;
+    margin: 2rem;
+}
+
+@media screen and (max-width:700px) {
+    .chack-details-heading {
+        font-size: 3rem;
+
+    }
+
+    .details-readbtn {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .details-readbtn :hover {
+        padding: 1rem 3rem;
+    }
+
+    .details-headings {
+        height:330px;
+    }
+}

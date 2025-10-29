@@ -1,0 +1,143 @@
+.trading-talk-section {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.trading-talk-section h1 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.trading-talk-section span {
+    color: blue;
+}
+
+.trading-talk-heading {
+    margin: auto;
+    max-width: 900px;
+}
+
+.trading-talk-heading p {
+    margin: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Trading-story-slider-cards {
+    margin: 2rem;
+}
+
+.trading-talk-cards {
+
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 560px;
+    border-radius: 10px;
+    background-color: rgba(78, 78, 134, 0.521);
+    transition: 0.1s;
+}
+
+.trading-talk-cards:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.158) 0px 8px 0px;
+}
+
+.trading-talk-cards-name {
+    font-size: 12px;
+    margin: auto 2rem;
+}
+
+.trading-talk-cards-img {
+    display: flex;
+}
+
+.trading-talk-cards-img img {
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.trading-talk-cards-thinks {
+    padding-top: 1rem;
+    margin: auto;
+}
+
+.trades-talk-section {
+    cursor: pointer;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.trade-talks-btn {
+    max-width: 1200px;
+    padding: 3rem 0;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.trade-talks-btn button {
+    cursor: pointer;
+    background: rgb(17, 0, 255);
+    padding: 1rem 3rem;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.trade-talks-btn button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #000;
+}
+
+@media screen and (max-width:700px) {
+    .trading-talk-section h1 {
+        font-size: 3rem;
+    }
+
+    .trading-talk-cards {
+        max-width: 300px;
+        height: 380px;
+
+    }
+
+    .trading-talk-cards-name {
+        padding-top: 1rem;
+        text-align: left;
+
+    }
+    .trading-talk-section {
+        max-width: 530px;
+        margin: auto;
+       
+    }
+}
+
+@media screen and (max-width:1026px) {
+    .trading-talk-cards-img {
+        flex-direction: column;
+    }
+    .trading-talk-cards-name {
+        padding-top: 1rem;
+        text-align: left;
+
+    }
+    .trading-talk-cards{
+        max-width:350px ;
+    }
+}
+@media screen and (max-width:1200px) {
+    .trading-talk-cards-img img{
+        width: 200px;
+        height: 150px;
+    }
+    .trading-talk-cards{
+        max-width: 450px;
+    }
+}

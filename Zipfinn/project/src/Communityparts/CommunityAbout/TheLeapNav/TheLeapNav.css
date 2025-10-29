@@ -1,0 +1,154 @@
+
+.community-The-Leap-container {
+    max-width: 1400px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.community-The-Leap-section h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.community-The-Leap-section P {
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Take-the-leap-btn {
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 3rem;
+    color: white;
+    border: 2px solid rgb(199, 199, 199);
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    background-color: blue;
+    border: none;
+}
+
+.Take-the-leap-btn:hover {
+    background-color: rgb(224, 223, 223);
+    color: #000;
+    padding: 0.8rem 3rem;
+}
+
+.community-The-Leap-image {
+
+    cursor: pointer;
+    line-height: 0;
+}
+
+.community-The-Leap-image img:hover {
+    animation-play-state: running;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.community-The-Leap-image img {
+    width: 900px;
+    border-radius: 2rem;
+    margin: 2rem;
+    animation: blink 2s steps(3, start) infinite;
+    animation-play-state: paused;
+}
+
+.community-The-leap-leap-simple-true-power-sections {
+    width: 320px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.community-The-leap-leap-icon {
+    font-size: 2rem;
+
+}
+
+.community-The-leap-leap-simple-true-power-sections h4 {
+    margin: 1rem 0;
+}
+
+.community-The-leap-leap-simple-true-power-sections p {
+    font-size: 14px;
+}
+
+.community-The-leap-leap-simple-true-power-sections img {
+    height: 40px;
+    width: 45px;
+}
+
+
+.community-The-leap-simple-true-power-container {
+    padding: 0 2rem;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+@media screen and (max-width:700px) {
+    
+    .community-The-Leap-section h1 {
+        font-size: 2rem;
+    }
+
+    .community-The-Leap-section .TheLeap-para {
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .community-The-Leap-image img {
+        padding-top: 2rem;
+        max-width: 330px;
+    }
+
+    .community-The-leap-simple-true-power-container {
+        flex-direction: column;
+
+    }
+
+    .community-The-leap-leap-simple-true-power-sections {
+        border-bottom: 2px solid white;
+        padding-bottom: 0.5rem;
+    }
+
+}
+@media screen and (max-width:1025px) {
+    .community-The-Leap-section h1 {
+        font-size: 3rem;
+    }
+
+    .community-The-Leap-section .TheLeap-para {
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .community-The-Leap-image img {
+        margin: 5rem 5px;
+        max-width: 400px;
+    }
+
+}
