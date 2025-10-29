@@ -1,0 +1,395 @@
+/* EOPaperTradingCalculator.css - Overlap Version */
+
+.EOpaper-trading-calculator-overlap {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  max-width: 1100px;
+  margin: -150px auto 0;
+  position: relative;
+  z-index: 10;
+  border: 1px solid #e8ecf0;
+}
+
+/* Header Section */
+.EOpaper-calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+}
+
+.EOpaper-header-content {
+  flex: 1;
+  padding-right: 24px;
+}
+
+.EOpaper-main-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.EOpaper-main-description {
+  font-size: 15px;
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.EOheader-image {
+  flex-shrink: 0;
+}
+
+.EOcalculator-image {
+  width: 140px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Divider */
+.EOdivider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  margin: 0;
+}
+
+/* Calculator Section */
+.EOcalculator-section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.EOsection-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #1a1a1a;
+  letter-spacing: -0.3px;
+}
+
+/* Stock Selection */
+.EOstocks-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.EOstock-card {
+  border: 2px solid #e8ecf0;
+  border-radius: 10px;
+  padding: 16px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: white;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.EOstock-card:hover {
+  border-color: #2a5298;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(42, 82, 152, 0.15);
+}
+
+.EOstock-card.EOactive {
+  border-color: #2a5298;
+  background: linear-gradient(135deg, #f8fbff 0%, #e8f0ff 100%);
+  box-shadow: 0 8px 25px rgba(42, 82, 152, 0.2);
+  transform: translateY(-2px);
+}
+
+.EOstock-symbol {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.EOstock-name {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Investment Controls */
+.EOinvestment-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.EOcontrol-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.EOcontrol-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+  color: #1a1a1a;
+  letter-spacing: -0.2px;
+}
+
+/* Amount Control */
+.EOamount-control {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.EOamount-display {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 2px solid #e8ecf0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-width: 140px;
+  transition: all 0.3s ease;
+}
+
+.EOamount-display:focus-within {
+  border-color: #2a5298;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+}
+
+.EOcurrency {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-right: 6px;
+}
+
+.EOamount {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-variant-numeric: tabular-nums;
+}
+
+.EOamount-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.EOamount-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e8ecf0;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #2a5298;
+}
+
+.EOamount-btn:hover {
+  background: #2a5298;
+  border-color: #2a5298;
+  color: white;
+  transform: scale(1.05);
+}
+
+.EOamount-btn:active {
+  transform: scale(0.95);
+}
+
+/* Purchase Time */
+.EOtime-select {
+  width: 100%;
+  height: 48px;
+  border: 2px solid #e8ecf0;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.EOtime-select:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+}
+
+.EOtime-select:hover {
+  border-color: #c8d0e0;
+}
+
+/* Calculate Button */
+.EOcalculate-button {
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 28px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  margin-top: 12px;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.EOcalculate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(42, 82, 152, 0.4);
+  background: linear-gradient(135deg, #315bb0 0%, #23468a 100%);
+}
+
+.EOcalculate-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 20px rgba(42, 82, 152, 0.3);
+}
+
+/* Responsive Design for Overlap */
+@media (max-width: 768px) {
+  .EOpaper-trading-calculator-overlap {
+    max-width: calc(100% - 32px);
+    margin: -60px auto 0;
+    border-radius: 14px;
+  }
+
+  .EOcalculator-header {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .EOheader-content {
+    padding-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .EOcalculator-image {
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+  }
+
+  .EOstocks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .EOcontrol-group {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .EOcalculator-section {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .EOpaper-main-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .EOpaper-trading-calculator-overlap {
+    margin: -40px auto 0;
+    max-width: calc(100% - 24px);
+  }
+
+  .EOpaper-main-title {
+    font-size: 20px;
+  }
+
+  .EOpaper-main-description {
+    font-size: 14px;
+  }
+
+  .EOsection-title {
+    font-size: 18px;
+  }
+
+  .EOstocks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .EOstock-card {
+    padding: 14px 8px;
+    min-height: 65px;
+  }
+
+  .EOstock-symbol {
+    font-size: 14px;
+  }
+
+  .EOstock-name {
+    font-size: 11px;
+  }
+
+  .EOamount-display {
+    min-width: 120px;
+    padding: 10px 14px;
+  }
+
+  .EOcalculate-button {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  .EOcalculator-header {
+    padding: 20px;
+  }
+
+  .EOcalculator-section {
+    padding: 20px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .EOstocks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .EOamount-control {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .EOamount-buttons {
+    justify-content: center;
+  }
+}

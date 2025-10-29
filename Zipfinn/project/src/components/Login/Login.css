@@ -1,0 +1,1725 @@
+/* 🔹 Reset all default browser styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🔹 Main login page wrapper - FIXED */
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 🔹 Container that splits into left (video) & right (form) */
+.split-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* 🔹 Left side (video background section) */
+.image-section {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    background: black;
+}
+
+/* 🔹 Video background inside left section */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* 🔹 Content on top of video */
+.image-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+}
+
+.image-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.image-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 🔹 Right side (form section) */
+.form-section {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 🔹 Tabs Container with Slider */
+.tabs-container {
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 18px 20px;
+    color: #666;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.tab:hover {
+    color: #6a11cb;
+    background: rgba(106, 17, 203, 0.05);
+}
+
+.tab.active {
+    color: #6a11cb;
+}
+
+/* 🔹 Slider Indicator */
+.tab-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #6a11cb;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+}
+
+.tab-slider.slide-left {
+    transform: translateX(0);
+}
+
+.tab-slider.slide-right {
+    transform: translateX(100%);
+}
+
+/* 🔹 Forms Wrapper */
+.forms-wrapper {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.form-content {
+    display: none;
+    animation: slideIn 0.4s ease-out;
+}
+
+.form-content.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 🔹 Form box styling */
+.form {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: formAppear 0.3s ease;
+}
+
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔹 Input field container */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* 🔹 Name fields layout */
+.name-fields {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Password fields layout */
+.password-fields {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-group.half {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* 🔹 Icon inside input box */
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6a11cb;
+    z-index: 2;
+    font-size: 14px;
+}
+
+/* 🔹 Input field styling */
+.input-group input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.input-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+    background: white;
+}
+
+.input-group input::placeholder {
+    color: #6c757d;
+}
+
+/* 🔹 Terms and Conditions Checkbox */
+.terms-group {
+    margin: 25px 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    padding-left: 35px;
+    transition: color 0.3s ease;
+}
+
+.checkbox-label:hover {
+    color: #6a11cb;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-label:hover .checkmark {
+    border-color: #6a11cb;
+}
+
+/* 🔹 Main button */
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(106, 17, 203, 0.3);
+}
+
+.btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* 🔹 Loading state for button */
+.btn.loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+}
+
+.btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 🔹 Disabled state */
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.btn:disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* 🔹 Success state for button */
+.btn.success {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+}
+
+/* 🔹 Error state for button */
+.btn.error {
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+/* 🔹 Social login section */
+.social-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 20px;
+    color: #666;
+    position: relative;
+    font-size: 14px;
+}
+
+/* 🔹 Horizontal lines beside "or" */
+.social-login p::before,
+.social-login p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: #dee2e6;
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+/* 🔹 Social buttons layout */
+.social-buttons,
+.more-social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* 🔹 Additional social icons when expanded */
+.more-social-buttons {
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease;
+}
+
+/* 🔹 Individual social button */
+.social-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: white;
+}
+
+/* 🔹 Different brand colors for buttons */
+.facebook {
+    background: #3b5998;
+}
+
+.google {
+    background: #dd4b39;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.yahoo {
+    background: #720e9e;
+}
+
+.apple {
+    background: #000;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+/* 🔹 Show more button for social logins */
+.show-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #6a11cb;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.show-more-btn:hover {
+    background: #f0e6ff;
+    transform: translateY(-1px);
+}
+
+.show-more-btn svg {
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* 🔹 API Response Messages */
+.api-message {
+    margin: 15px 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.api-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.api-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.api-message.info {
+    background: #cce7ff;
+    color: #004085;
+    border: 1px solid #b3d7ff;
+}
+
+/* 🔹 Form validation styles */
+.input-group.error input {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.input-group.success input {
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.validation-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Add these styles to your existing Login.css file */
+
+/* Forgot Password Styles */
+.forgot-password-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: -10px 0 15px 0;
+}
+
+.forgot-password-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* Forgot Password Overlay */
+.forgot-password-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.forgot-password-container-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.forgot-password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.forgot-password-header h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.forgot-password-content {
+  text-align: left;
+}
+
+.forgot-password-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 20px 0;
+}
+
+.forgot-password-form {
+  margin-top: 20px;
+}
+
+.email-label {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.send-link-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-link-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.send-link-btn.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Input group adjustments for forgot password */
+.forgot-password-container-modal .input-group {
+  margin-bottom: 0;
+}
+
+/* Add these styles to your existing Login.css file */
+
+/* OTP Verification Styles */
+.otp-verification-container-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-out;
+}
+
+.otp-verification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.otp-verification-header h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.otp-verification-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.continue-btn {
+  width: 100%;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.otp-verification-form {
+  margin-top: 20px;
+}
+
+.website-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.website-name {
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.otp-label {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.otp-instruction {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.otp-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  outline: none;
+}
+
+/* Enhanced OTP Input Styles */
+.otp-input.filled {
+  border-color: #667eea;
+  background: #f8f9ff;
+  box-shadow: 0 2px 5px rgba(102, 126, 234, 0.2);
+}
+
+/* Number Pad Enhancements */
+.number-row:last-child {
+  margin-bottom: 0;
+}
+
+.clear-btn, .backspace-btn {
+  background: #f8f9fa;
+  color: #666;
+  font-weight: 500;
+}
+
+.clear-btn:hover, .backspace-btn:hover {
+  background: #e9ecef;
+  border-color: #667eea;
+}
+
+/* Success message styling */
+.api-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.api-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+.entered-otp-display {
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
+  background: #f8f9ff;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.entered-otp-display span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 3px;
+}
+
+.verify-otp-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.verify-otp-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.verify-otp-btn.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Number Pad Styles */
+.number-pad {
+  margin-top: 25px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.number-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.number-btn {
+  width: 60px;
+  height: 50px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.number-btn:hover {
+  background: #f8f9ff;
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+
+/* Reset Password Specific Styles */
+.reset-password-container-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.reset-password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reset-password-header h2 {
+  color: #333;
+  margin: 0;
+  font-size: 24px;
+}
+
+.reset-password-description {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.password-label {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.password-strength {
+  margin: 10px 0;
+}
+
+.strength-bar {
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.strength-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.password-requirements {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 4px solid #007bff;
+}
+
+.password-requirements h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.password-requirements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.password-requirements li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.password-requirements li.met {
+  color: #28a745;
+}
+
+.password-requirements li.met svg {
+  color: #28a745;
+}
+
+.password-toggle {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reset-password-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Development OTP Styles */
+.development-otp-section {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.dev-otp-alert {
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.dev-otp-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.otp-value {
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 2px solid #28a745;
+}
+
+.copy-otp-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.auto-fill-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dev-otp-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Login.css में नीचे add करें */
+
+/* Complete Profile Modal Styles */
+.complete-profile-container-modal {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-out;
+}
+
+.complete-profile-header {
+  padding: 25px 30px 15px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.complete-profile-header h2 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.complete-profile-header p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.complete-profile-content {
+  padding: 0;
+}
+
+.complete-profile-form {
+  padding: 25px 30px 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group.half {
+  flex: 1;
+}
+
+.form-group.third {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.country-select {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.country-select:focus {
+  border-color: #3498db;
+}
+
+.mobile-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.mobile-input-group:focus-within {
+  border-color: #3498db;
+}
+
+.mobile-code {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 80px;
+  height: 100%;
+}
+
+.mobile-icon {
+  margin-right: 8px;
+  color: #666;
+}
+
+.mobile-input-group input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-group.half,
+  .form-group.third {
+    width: 100%;
+  }
+  
+  .complete-profile-container-modal {
+    width: 95%;
+    margin: 20px;
+  }
+  
+  .complete-profile-header,
+  .complete-profile-form {
+    padding: 20px;
+  }
+  
+  .mobile-code {
+    min-width: 70px;
+    font-size: 13px;
+  }
+}
+
+/* Add these styles to your existing Login.css file */
+
+/* Email Verification Modal */
+.email-verification-container-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+}
+
+.email-verification-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.email-verification-header .close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.email-verification-header .close-btn:hover {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.email-verification-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  font-size: 32px;
+}
+
+.email-verification-header h2 {
+  color: #2d3748;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.email-verification-header p {
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.email-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7fafc;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  border: 1px solid #e2e8f0;
+}
+
+.email-icon {
+  color: #667eea;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.email-address {
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.verify-email-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.verify-email-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.verify-email-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.verify-email-btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.verify-email-btn.loading::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.resend-otp-section {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.resend-otp-section p {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.resend-otp-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.resend-otp-btn:hover {
+  color: #5a67d8;
+}
+
+/* Enhanced OTP Input Styles for Email Verification */
+.email-verification-form .otp-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.email-verification-form .otp-input {
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+  color: #2d3748;
+}
+
+.email-verification-form .otp-input:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.email-verification-form .otp-input.filled {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+/* Enhanced Number Pad for Email Verification */
+.email-verification-form .number-pad {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.email-verification-form .number-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.email-verification-form .number-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #2d3748;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-verification-form .number-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.email-verification-form .clear-btn,
+.email-verification-form .backspace-btn {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.email-verification-form .clear-btn:hover,
+.email-verification-form .backspace-btn:hover {
+  background: #feb2b2;
+  color: #9b2c2c;
+}
+
+/* Animation for modal entrance */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .email-verification-container-modal {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .email-verification-header h2 {
+    font-size: 24px;
+  }
+  
+  .email-verification-form .otp-input {
+    width: 45px;
+    height: 55px;
+    font-size: 20px;
+  }
+  
+  .email-verification-form .number-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+/* Responsive adjustments for OTP */
+@media (max-width: 480px) {
+  .otp-verification-container-modal {
+    padding: 20px;
+    margin: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .otp-input {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .number-btn {
+    width: 50px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .otp-verification-header h2 {
+    font-size: 20px;
+  }
+
+  .otp-label {
+    font-size: 16px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .forgot-password-container {
+    margin: -5px 0 12px 0;
+  }
+  
+  .forgot-password-link {
+    font-size: 13px;
+  }
+
+  .forgot-password-container-modal {
+    padding: 20px;
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .forgot-password-header h2 {
+    font-size: 20px;
+  }
+
+  .forgot-password-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .forgot-password-container-modal {
+    padding: 15px;
+    margin: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .forgot-password-header h2 {
+    font-size: 18px;
+  }
+}
+/* 🔹 Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    .name-fields,
+    .password-fields {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-group.half {
+        margin-bottom: 0;
+    }
+
+    .tab {
+        padding: 16px 15px;
+        font-size: 15px;
+    }
+    
+    .btn.loading::after {
+        width: 18px;
+        height: 18px;
+        margin-left: -9px;
+        margin-top: -9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 100%;
+    }
+    
+    .form {
+        padding: 25px 20px;
+    }
+    
+    .tabs {
+        flex-direction: row;
+    }
+    
+    .tab {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+    
+    .btn.loading::after {
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        margin-top: -8px;
+    }
+    
+    .api-message {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}
+
+/* 🔹 Additional animations for better UX */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* 🔹 Focus states for accessibility */
+.btn:focus {
+    outline: 2px solid #6a11cb;
+    outline-offset: 2px;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.tab:focus {
+    outline: 2px solid #6a11cb;
+    outline-offset: -2px;
+}

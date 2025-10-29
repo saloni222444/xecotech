@@ -1,0 +1,819 @@
+.AAO-stocks-section {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: white;
+    color: #131722;
+    padding: 20px 0;
+}
+
+.AAO-section-container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Header Styles */
+.AAO-section-header {
+    margin-bottom: 24px;
+}
+
+.AAO-header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.AAO-logo-text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.AAO-flag-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.AAO-title-wrapper h2 {
+    margin: 0;
+}
+
+.AAO-title-wrapper a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.AAO-arrow-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Widget Groups */
+.AAO-widget-group {
+    margin-bottom: 40px;
+}
+
+.AAO-widget-header {
+    margin-bottom: 16px;
+}
+
+.AAO-widget-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #131722;
+}
+
+.AAO-widget-header a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Horizontal Scroll Containers */
+.AAO-horizontal-scroll-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.AAO-scroll-content {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 8px 0;
+    scroll-behavior: smooth;
+}
+
+.AAO-scroll-content::-webkit-scrollbar {
+    display: none;
+}
+
+.AAO-scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #131722;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.AAO-scroll-button:hover {
+    background: #f0f3fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.AAO-scroll-button.AAO-right {
+    right: 0;
+}
+
+.AAO-scroll-button.AAO-left {
+    left: 0;
+}
+
+/* Ticker Cards */
+.AAO-custom-ticker-card {
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.AAO-stock-ticker-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.2s;
+    border: 1px solid #e0e3eb;
+    height: 100%;
+}
+
+.AAO-stock-ticker-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #d1d4dc;
+}
+
+.AAO-ticker-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.AAO-ticker-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.AAO-ticker-info {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    min-width: 0;
+}
+
+.AAO-ticker-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.AAO-ticker-name {
+    font-size: 12px;
+    color: #787b86;
+    line-height: 1.3;
+}
+
+.AAO-ticker-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+}
+
+.AAO-data-mode {
+    background: #2962ff;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.AAO-market-status {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #787b86;
+}
+
+.AAO-status-label {
+    font-size: 9px;
+}
+
+.AAO-status-icon {
+    width: 6px;
+    height: 6px;
+    background: #787b86;
+    border-radius: 50%;
+}
+
+.AAO-ticker-symbol {
+    font-size: 14px;
+    font-weight: 700;
+    color: #131722;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.AAO-ticker-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.AAO-price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.AAO-ticker-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #131722;
+}
+
+.AAO-ticker-currency {
+    font-size: 11px;
+    color: #787b86;
+}
+
+.AAO-ticker-change {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.AAO-ticker-change.AAO-up {
+    color: #00a86b;
+    background-color: rgba(0, 168, 107, 0.1);
+}
+
+.AAO-ticker-change.AAO-down {
+    color: #f23645;
+    background-color: rgba(242, 54, 69, 0.1);
+}
+
+.AAO-ticker-change.AAO-neutral {
+    color: #787b86;
+    background-color: rgba(120, 123, 134, 0.1);
+}
+
+/* Hotlist Widgets */
+.AAO-hotlist-widgets {
+    margin-bottom: 40px;
+}
+
+.AAO-widgets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.AAO-widget-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e0e3eb;
+}
+
+.AAO-widget-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.AAO-widget-content.AAO-large .AAO-stock-ticker-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+        "logo info price"
+        "logo symbol change";
+    gap: 12px;
+    align-items: start;
+}
+
+.AAO-widget-content.AAO-large .AAO-ticker-logo {
+    grid-area: logo;
+}
+
+.AAO-widget-content.AAO-large .AAO-ticker-info {
+    grid-area: info;
+}
+
+.AAO-widget-content.AAO-large .AAO-ticker-symbol {
+    grid-area: symbol;
+    margin-bottom: 0;
+}
+
+.AAO-widget-content.AAO-large .AAO-ticker-price-container {
+    grid-area: price;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+}
+
+.AAO-widget-footer {
+    border-top: 1px solid #e0e3eb;
+    padding-top: 16px;
+}
+
+.AAO-more-button {
+    color: #2962ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.AAO-more-button:hover {
+    color: #1e53e5;
+}
+
+/* Idea Cards */
+.AAO-ideas-grid {
+    display: flex;
+    gap: 16px;
+}
+
+.AAO-idea-card {
+    min-width: 280px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+    border: 1px solid #e0e3eb;
+    flex-shrink: 0;
+}
+
+.AAO-idea-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.AAO-idea-text {
+    padding: 16px;
+}
+
+.AAO-idea-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #131722;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.AAO-idea-title:hover {
+    color: #2962ff;
+}
+
+.AAO-idea-description {
+    font-size: 12px;
+    color: #787b86;
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.AAO-idea-preview {
+    position: relative;
+    height: 140px;
+    background: #f8f9fa;
+}
+
+.AAO-preview-grid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.AAO-preview-corner {
+    position: absolute;
+    z-index: 2;
+}
+
+.AAO-preview-corner.AAO-top-left {
+    top: 8px;
+    left: 8px;
+}
+
+.AAO-preview-corner.AAO-bottom-left {
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.AAO-preview-corner.AAO-bottom-right {
+    bottom: 8px;
+    right: 8px;
+}
+
+.AAO-preview-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.AAO-editors-pick-badge {
+    background: white;
+    border-radius: 6px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AAO-editors-pick-badge img {
+    width: 16px;
+    height: 16px;
+}
+
+.AAO-play-button {
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AAO-logo-icon img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.AAO-strategy-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00a86b;
+}
+
+.AAO-strategy-icon.AAO-long {
+    background: #00a86b;
+}
+
+.AAO-strategy-icon.AAO-short {
+    background: #f23645;
+}
+
+.AAO-video-duration {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.AAO-idea-meta {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.AAO-idea-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.AAO-author-link {
+    font-size: 12px;
+    color: #787b86;
+    text-decoration: none;
+}
+
+.AAO-author-link:hover {
+    color: #131722;
+}
+
+.AAO-publish-date {
+    font-size: 11px;
+    color: #b2b5be;
+}
+
+.AAO-idea-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.AAO-comment-button,
+.AAO-boost-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: 1px solid #e0e3eb;
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #787b86;
+    text-decoration: none;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.AAO-comment-button:hover,
+.AAO-boost-button:hover {
+    background: #f0f3fa;
+    color: #131722;
+}
+
+/* Earnings Calendar */
+.AAO-earnings-grid {
+    display: flex;
+    gap: 16px;
+}
+
+.AAO-earning-card {
+    min-width: 200px;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    border: 1px solid #e0e3eb;
+    flex-shrink: 0;
+}
+
+.AAO-earning-card:hover {
+    transform: translateY(-2px);
+    color: inherit;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AAO-earning-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.AAO-earning-date {
+    font-size: 13px;
+    font-weight: 500;
+    color: #131722;
+}
+
+.AAO-earning-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.AAO-earning-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.AAO-earning-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.AAO-earning-symbol {
+    font-size: 14px;
+    font-weight: 600;
+    color: #131722;
+}
+
+.AAO-earning-company {
+    font-size: 11px;
+    color: #787b86;
+    line-height: 1.3;
+}
+
+.AAO-earning-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.AAO-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.AAO-stat-title {
+    font-size: 11px;
+    color: #787b86;
+}
+
+.AAO-stat-value {
+    font-size: 13px;
+    font-weight: 500;
+    color: #131722;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.AAO-stat-value.AAO-highlighted {
+    color: #787b86;
+}
+
+.AAO-currency {
+    font-size: 10px;
+    color: #787b86;
+}
+
+/* News Grid */
+.AAO-news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.AAO-news-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    border: 1px solid #e0e3eb;
+}
+
+.AAO-news-card:hover {
+    transform: translateY(-2px);
+    color: inherit;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AAO-news-article {
+    height: 100%;
+}
+
+.AAO-news-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.AAO-news-symbols {
+    display: flex;
+    gap: 2px;
+}
+
+.AAO-news-logo {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.AAO-news-time {
+    font-size: 11px;
+    color: #787b86;
+}
+
+.AAO-news-source {
+    font-size: 11px;
+    color: #787b86;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.AAO-news-title {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #131722;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* See All Cards */
+.AAO-see-all-card {
+    min-width: 120px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    border: 1px solid #e0e3eb;
+    flex-shrink: 0;
+}
+
+.AAO-see-all-card:hover {
+    background: #f0f3fa;
+    color: #2962ff;
+}
+
+.AAO-see-all-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Title Links */
+.AAO-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.AAO-title-link:hover {
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .AAO-section-container {
+        padding: 0 12px;
+    }
+
+    .AAO-widgets-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .AAO-custom-ticker-card {
+        min-width: 160px;
+    }
+
+    .AAO-idea-card {
+        min-width: 260px;
+    }
+
+    .AAO-earning-card {
+        min-width: 180px;
+    }
+
+    .AAO-news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .AAO-widget-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .AAO-custom-ticker-card {
+        min-width: 140px;
+    }
+
+    .AAO-stock-ticker-card {
+        padding: 12px;
+    }
+
+    .AAO-idea-card {
+        min-width: 240px;
+    }
+
+    .AAO-earning-card {
+        min-width: 160px;
+    }
+
+    .AAO-scroll-button {
+        width: 28px;
+        height: 28px;
+    }
+}
